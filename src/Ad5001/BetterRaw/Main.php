@@ -21,7 +21,7 @@ use pocketmine\plugin\PluginBase;
           public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
                  switch($cmd->getName()) {
                          case "getgm":
-                           $sender->sendMessage($this->getPlayer()->$sender->getGamemode());
+                           $sender->sendMessage($this->getServer()->getPlayer()->$sender->getGamemode());
                            return true;
                            break;
                  }
